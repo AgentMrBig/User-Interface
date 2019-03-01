@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Karla', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -77,57 +78,49 @@ h1, h2, h3, h4, h5 {
 }
 
 .mainContainer{
-	margin-left:40px;
-	margin-right:40px;
+	margin-left:70px;
+	margin-right:70px;
 }
 
+/* START - CSS for positioning the slogan and start button     */
 .slogan{
-	text-align:center;
-	width: 300px;
-	height: 400x;
-	border: solid red 2px;
-	font-size: 75px;
-	margin-left: 100px;
-	margin-top: 150px;
-	display: block;
+	text-align: center;
+	font-size: 60px;
 }
-.startbutton{
-	width: 200px;
 
+.sloganFine{
+	width: 200px;
+	padding-left: 100px;
+	padding-top: 20px;
+}
+
+.startbutton{
+	width: 150px;
+	height: 20px;
+	margin-left: 40px;
 	display: block;
 	box-sizing: border-box;
 }
+/* END - CSS for positioning the slogan and start button */
 
-.right {
-	float: right;
-	
 
-	
-}
-
-.left {
-	float: left;
-	
-	border: 3px solid #73AD21;
-	
-}
 
 .inline{
 	display: inline-block;
 }
 
+/* START - Top Nav CSS */
 .topnav {
 	overflow: hidden;
 	color: black;
 	padding-bottom: 0px;
-	 
+	background-color: oldlace; 
 }
   
 .topnav a {
-float: left;
+display: inline-block;
 color: black;
 text-align: center;
-padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
 }
@@ -144,28 +137,50 @@ color: white;
 
 .navItem{
 	box-sizing: border-box;
-	
+	margin: 30px;
 }
+/* END - Top Nav CSS */
+
 
 .topSection{
-	margin: auto;
+
+	padding-top: 60px;
 }
 
-.clear { clear: both;}
 
 hr{
 	border: 1px solid black;
 }
 
-.topSectionLeft{
-	width: 50%;
-	float: left;
+.midSection{
+	width: 100%;
+	height: 100%;
 }
+
+.topSectionLeft{
+	width: 49%;
+	padding-top:10px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	display: inline-block;
+	
+}
+
+.topSectionRight{
+	width: 50%;
+	padding-top:10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	display: inline-block;
+	
+}
+
+
 .botSectionLeft{
 	width: 33%;
 	padding-top:10px;
 	padding-bottom: 15px;
-	float: left;
+	
 	display: inline-block;
 }
 .botSectionCenter{
@@ -179,12 +194,65 @@ hr{
 }
 .botSectionRight{
 	width: 33%;
-	display: inline-block;
 	padding-top:10px;
 	padding-bottom: 15px;
+	display: inline-block;
 }
-.topSectionRight{
+
+.testLeft{
 	width: 50%;
-	float: right;
-	padding-bottom: 15px;
+	display: inline-block;
 }
+
+.img-center{
+	margin: 0 auto;
+  	width: 100px;
+  	height: 100px;
+}
+
+nav.main-nav {
+    background:#fff;
+    height:60px;
+    z-index:170;
+	margin:0 auto;
+	margin-left: 40px;
+    border-bottom:1px solid #dadada;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    text-align: center;
+}
+
+.bottomSpace{
+	height: 800px;
+}
+
+.logo-right{
+	margin-top: 20px;
+	float: right;
+}
+
+.centerImg{
+	margin: auto;
+	width: 100%;
+}
+
+.spaceHolder{
+	padding: 30px;
+	padding-bottom: 100px;
+	height: 167px;
+}
+
+.blockText{
+	margin-left: auto;
+	margin-right: auto;
+	width: 4em;
+	text-align: center;
+}
+
+
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
