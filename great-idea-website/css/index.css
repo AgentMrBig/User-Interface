@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5 {
 .slogan{
 	text-align: center;
 	font-size: 60px;
+	margin-top: 100px;
 }
 
 .sloganFine{
@@ -103,18 +104,53 @@ h1, h2, h3, h4, h5 {
 }
 /* END - CSS for positioning the slogan and start button */
 
+.logo-right{
+	margin-top: 20px;
+	margin-left: 100px;
+	background-image: url("../img/header-img.png");
+  	background-repeat: no-repeat;
+  	background-position: right top;
+  	
+    
+    width: 379px;
+    height: 379px;
+}
 
+.circle {
 
-.inline{
+	border-radius: 50%;
+
 	display: inline-block;
+
+	margin-right: 20px;
+
 }
 
 /* START - Top Nav CSS */
+
+
+nav.main-nav {
+    background-image: -o-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: -moz-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: -webkit-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: -ms-linear-gradient(bottom, #637694 0%, #C5CFE0 100%);
+	background-image: linear-gradient(to bottom, #637694 0%, #C5CFE0 100%);
+    height:60px;
+    z-index:2;
+	margin-left: 0px;
+    border-bottom:1px solid #dadada;
+    width:100%;
+    position:fixed;
+    top:0px;
+    left:0;
+    right:0;
+    text-align: center;
+}
+
 .topnav {
-	overflow: hidden;
+	
 	color: black;
-	padding-bottom: 0px;
-	background-color: oldlace; 
+	
 }
   
 .topnav a {
@@ -126,24 +162,26 @@ font-size: 17px;
 }
 
 .topnav a:hover {
-background-color: #ddd;
+
 color: black;
 }
 
 .topnav a.active {
-background-color: #4CAF50;
+
 color: white;
 }
 
 .navItem{
-	box-sizing: border-box;
+	padding-bottom: 20px;
 	margin: 30px;
+	margin-top: 10px;
+
+	display: inline-block;
 }
 /* END - Top Nav CSS */
 
 
 .topSection{
-
 	padding-top: 60px;
 }
 
@@ -162,6 +200,7 @@ hr{
 	padding-top:10px;
 	padding-bottom: 15px;
 	padding-right: 10px;
+	
 	display: inline-block;
 	
 }
@@ -205,39 +244,25 @@ hr{
 }
 
 .img-center{
-	margin: 0 auto;
-  	width: 100px;
-  	height: 100px;
+
+	background-image: url("../img/mid-page-accent.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	
+	display: inline-block;
+    width: 100%;
+    height: 182px;
+	 
 }
 
-nav.main-nav {
-    background:#fff;
-    height:60px;
-    z-index:170;
-	margin:0 auto;
-	margin-left: 40px;
-    border-bottom:1px solid #dadada;
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    text-align: center;
-}
+
 
 .bottomSpace{
 	height: 800px;
 }
 
-.logo-right{
-	margin-top: 20px;
-	float: right;
-}
 
-.centerImg{
-	margin: auto;
-	width: 100%;
-}
+
 
 .spaceHolder{
 	padding: 30px;
@@ -252,7 +277,17 @@ nav.main-nav {
 	text-align: center;
 }
 
-
+.topRightLogo{
+	background-image: url("../img/logo.png");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	z-index: 20;
+	
+    width: 183px;
+	height: 36px;
+	
+	display: inline-block;
+}
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.5); }
